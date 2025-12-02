@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import styles from "./layout.module.css";
+import FiverrWatermark from "@/components/FiverrWatermark";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default function RootLayout({
             <p>&copy; {new Date().getFullYear()} RFCICalculator. All rights reserved.</p>
           </div>
         </footer>
+        <FiverrWatermark />
       </body>
     </html>
   );
